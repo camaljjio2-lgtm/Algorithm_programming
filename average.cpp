@@ -24,7 +24,6 @@ int main() {
         sum += score[i];
     }
 
-
     double result = (sum * 100.0 / max_score / N);
     cout << result;
     return 0;
