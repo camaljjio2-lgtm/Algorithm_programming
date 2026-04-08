@@ -21,6 +21,4 @@ int main() {
         cin >> s >> e >> v;
         A[s].push_back({e,v});
     }
-    // 사용자가 원하는 값 불러오기 
-    
 }
