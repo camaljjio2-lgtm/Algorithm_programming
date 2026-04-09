@@ -19,11 +19,16 @@ int main() {
     for (int j = 1; j <= N; j++) {
         for (int k = 1; k <= N; k++) {
             grid[j][k] += grid[j][k-1] + grid[j-1][k] - grid[j-1][k-1];
-            cout << grid[j][k] << " ";
         }
-        cout << "\n";
     }
-    
+    int x1, y1 = 0;
+    int x2, y2 = 0;
+    int sum = 0;
+    for (int i =0; i < M; i++){
+        cin >> x1 >> y1 >> x2 >> y2 ;
+        sum = grid[x2][y2] - grid[x2][y1-1] - grid[x1-1][y2] + grid[x1-1][y1-1];
+        cout << sum << "\n";
+    }
 }
 
 
